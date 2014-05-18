@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/style.css"/>
+</head>
+<body>
+<div id="popup-content">
+    <div id="popup-head">
+        <a id="website" href="#" data="http://www.smzdm.com/?source=ff">
+            <img id="smzdmLogo" src="images/logo.jpg">
+        </a>
+
+        <div id="popup-actions">
+            <div class="popup-actions-row">
+                <!--<a class="pbtn" href="#">登陆</a>
+                <span id="line" style="color:#999;padding:0px 3px;">|</span>-->
+                <a id="register" class="pbtn" href="#" data="http://www.smzdm.com/register.php">注册</a>
+            </div>
+            <div class="popup-actions-row">
+                <a id="baoliao" class="btn btn-primary" href="#" data="http://www.smzdm.com/submit">我要爆料</a>
+                <!--<a class="btn btn-warning" href="#">每日签到</a>-->
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="popup-body">
+        <ul class="items" id="items">
+            <!--<li class="item">
+                <div class="item-image-frame">
+                    <div class="item-image">
+                        <a href="#" data="http://www.smzdm.com/youhui/464719?source=ch">
+                            <img src="http://p.zdmimg.com/201405/15/5374dc631ba2f.jpg_m7.jpg" style="max-height:80px;max-width:80px;">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="item-title">
+                    <a href="#" data="http://www.smzdm.com/youhui/464753?source=ch"
+                       class="item-title-main item-no-read">
+                        SONY 索尼 KDL-55W800B 55寸3D电视（XR400、迅锐引擎PRO、快门3D）健康的降幅扩大艰苦飞机扩大艰苦老费劲了开始就哭了的解放军斯蒂芬森了解对方快乐是的降幅快乐是的降幅了可
+                        <span class="item-title-ps">7199元包邮 晒单返500通用券</span>
+                    </a>
+                </div>
+                <div class="item-bottombar">
+                    <div class="item-from">
+                        <span class="fromname">亚马逊中国</span>
+                        <span class="happentime">3小时前</span></div>
+                    <div class="item-actions">
+                        <a class="" href="#">直达链接</a> >
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <div style="clear:both;"></div>
+            </li>-->
+        </ul>
+    </div>
+
+    <div id="popup-bottom">
+        <div class="popup-bottom-actions">
+            <a id="deleteAllItem" class="btn btn-primary" href="#">全部删除</a>
+            <a id="viewMoreItems" class="btn btn-primary" href="#" data="http://www.smzdm.com/?source=ff">查看更多</a>
+        </div>
+        <div class="setting">
+            <a href="options.html">
+                <img id="setting" src="images/setting.png">
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<script type="text/x-handlebars-template" id="item-template">
+    {{#items}}
+    <li class="item" data-id="{{msg_id}}">
+        <div class="item-image-frame">
+            <div class="item-image">
+                <a href="#" data="{{msg_url}}">
+                    <img src="{{msg_picurl}}" class="item-image-img">
+                </a>
+            </div>
+
+        </div>
+        <div class="item-title">
+            <a href="#" data="{{msg_url}}" class="item-title-main {{#noread}}item-no-read{{/noread}}">
+               {{tran_title1}}<span class="item-title-ps">{{tran_title2}}</span>
+            </a>
+        </div>
+        <div class="item-bottombar">
+            <div class="item-from">
+                <span class="fromname">{{msg_mall}}</span>
+                <span class="happentime timeago" title="{{msg_date}}000"></span></div>
+            <div class="item-actions">
+                <a class="buy" href="#" data="{{msg_buyurl}}">直达链接</a> >
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+        <div style="clear:both;"></div>
+    </li>
+    {{/items}}
+</script>
+
+</body>
+</html>

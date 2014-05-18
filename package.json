@@ -1,0 +1,10 @@
+{
+    "name": "smzdmplus",
+    "title": "smzdmplus",
+    "id": "jid1-OTjpmQ87wGejLQ",
+    "description": "a basic add-on",
+    "author": "",
+    "license": "MPL 2.0",
+    "version": "0.1",
+    "dependencies": ["toolbarwidget", "addon-sdk"]
+}
