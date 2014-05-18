@@ -11,6 +11,8 @@ smzdm.com上firefox的推送扩展
 
 - 只在win7,ff29版进行了测试,理论上21以上都可以
 
+有问题邮poison7@yeah.net不保证回复
+
 截图
 ----------
 
