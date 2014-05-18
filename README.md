@@ -1,5 +1,21 @@
-smzdmplus
+smzdmplus无聊自制版
 =========
 
 smzdm.com上firefox的推送插件
 官方版实在太难用了,闲得蛋疼,自己写了个
+
+类似chrome的推送提示,需要[tab-notifier](https://addons.mozilla.org/en-US/firefox/addon/tab-notifier/)扩展的支持
+不然就使用ff自带的,ff当前不支持一次弹出多个提示,一次有多个只显示数量
+
+截图
+----------
+
+### 展示窗口
+![Image text1](http://raw.github.com/chenxiaolei/smzdmplus/master/snapshot/1.png)
+
+### tab notifier 推送提示
+![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/2.png)
+
+### ff自带推送提示
+![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/4.png)
+![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/5.png)
