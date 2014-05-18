@@ -4,6 +4,8 @@ smzdmplus无聊自制版
 smzdm.com上firefox的推送插件
 官方版实在太难用了,闲得蛋疼,自己写了个
 
+类似chrome的推送提示,需要[https://addons.mozilla.org/en-US/firefox/addon/tab-notifier/](tab notifier)扩展的支持
+
 截图
 ----------
 
