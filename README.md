@@ -7,6 +7,8 @@ smzdm.com上firefox的推送插件
 类似chrome的推送提示,需要[tab-notifier](https://addons.mozilla.org/en-US/firefox/addon/tab-notifier/)扩展的支持
 不然就使用ff自带的,ff当前不支持一次弹出多个提示,一次有多个只显示数量
 
+[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi)
+
 截图
 ----------
 
