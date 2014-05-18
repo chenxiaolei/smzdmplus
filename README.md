@@ -9,6 +9,8 @@ smzdm.com上firefox的推送扩展
 
 扩展在此[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi) 
 
+- 只在win7,ff29版进行了测试,理论上21以上都可以
+
 截图
 ----------
 
