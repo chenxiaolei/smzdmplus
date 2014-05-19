@@ -1,17 +1,21 @@
 smzdmplus无聊自制版
 =========
 
-smzdm.com上firefox的推送扩展
-官方版实在太难用了,闲得蛋疼,自己写了个
+smzdm.com上firefox的推送扩展，官方版实在太难用了，一年都没更新过，和chrome的插件比简直...<br/>
+这两天闲得蛋疼,比到官方chrome版写了个，基本实现了chrome的主要功能，登陆，过滤啥的没做。
 
-类似chrome的推送提示,需要先安装[tab-notifier](https://addons.mozilla.org/en-US/firefox/addon/tab-notifier/)扩展
-不然就使用ff自带的,ff sdk当前不支持一次弹出多个提示,一次有多个只显示数量
+类似chrome的推送提示,需要先安装[tab-notifier](https://addons.mozilla.org/en-US/firefox/addon/tab-notifier/)扩展<br/>
+不然就使用ff自带的<br/>
+ps: 
+1，tab-notifer通知窗口的设置在tab-notifer扩展选项中设置(如:自动关闭事件,大小,位置等), <br/>
+2，ff原生接口目前通知窗口不能堆叠通知窗口,一次只能显示一个，且3秒自动消失，无法设置
 
 扩展在此[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi) 
 
-- 只在win7,ff29版进行了测试,理论上21以上都可以
+- 最低要求是ff21, 自己是win7的ff29,理论上mac,linux都可以,没测试
 
-有问题邮poison7@yeah.net不保证回复
+有问题邮poison7@yeah.net<br/>
+不保证回复
 
 截图
 ----------
@@ -23,5 +27,6 @@ smzdm.com上firefox的推送扩展
 ![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/2.png)
 
 ### ff自带推送提示
-![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/4.png)
+![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/4.png)<br/>
+一次收到多个推送,合并只显示数量<br/>
 ![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/5.png)
