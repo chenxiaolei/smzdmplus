@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>smzdmplus配置选项</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/setting.css"/>
+</head>
+<body>
+<div class="container" style="margin-top:20px;" id="setting-container">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">推送基本设置</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label">是否开启桌面提示
+                            <a id="testNotifyBtn" class="btn btn-success btn-xs" href="#">
+                            <span class="glyphicon glyphicon-new-window"></span>
+                            观看弹窗样式
+                        </a>
+                        </label>
+                        <div>
+                            <label class="radio-inline">
+                                <input type="radio" name="allowNotify" id="allowNotifyYes" value="1" pref="showDesktopNotifications">开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="allowNotify" id="allowNotifyNo" value="0" pref="showDesktopNotifications">关闭
+                            </label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label" for="maxAppendedItemsSize">最近信息保留条数</label>
+                        <div>
+                            <select id="maxAppendedItemsSize" name="maxAppendedItemsSize" class="form-control" pref="maxAppendedItemsSize">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label" >是否开启声音提示
+                            <a id="playSoundBtn" class="btn btn-success btn-xs" href="#">
+                                <span class="glyphicon glyphicon-play"></span>
+                                试听
+                            </a>
+                        </label>
+                        <div>
+                            <label class="radio-inline">
+                                <input type="radio" name="allowPlaySound" id="allowPlaySoundYes" value="1" pref="allowNotificationsPlaySound">开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="allowPlaySound" id="allowPlaySoundNo" value="0" pref="allowNotificationsPlaySound">关闭
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="control-label" for="allowItemArea">商品所在地区选择</label>
+                        <div>
+                            <select id="allowItemArea" name="allowItemArea" class="form-control" pref="allowItemArea">
+                                <option value="0">全部</option>
+                                <option value="1">仅国内</option>
+                                <option value="2">仅国外</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">推送分类设置</h3>
+        </div>
+        <div class="panel-body">
+            <div id="priceCat-body">
+            </div>
+            <hr/>
+            <div id="itemCat-body">
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">关键字订阅</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea id="keywordInclud" name="keywordInclud" pref="keywordInclud" class="form-control" rows="3" placeholder="请输入要定制的关键字并以逗号（中文全角逗号）分隔，如：iPad，信用卡，乐高"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">工具栏图标行为设置</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label">鼠标左键点击</label>
+                        <div>
+                            <select id="leftClick" name="leftClickSelect" class="form-control" pref="leftClick">
+                                <option value="0">打开弹出视图</option>
+                                <option value="1">打开smzdm网站</option>
+                                <option value="3">删除所有信息</option>
+                                <option value="4">无动作</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label">鼠标中键点击</label>
+                        <div>
+                            <select id="middleClick" name="middleClickSelect" class="form-control" pref="middleClick">
+                                <option value="1">打开smzdm网站</option>
+                                <option value="3">删除所有信息</option>
+                                <option value="4">无动作</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="control-label">鼠标右键点击</label>
+                        <div>
+                            <select id="rightClick" name="rightClickSelect" class="form-control" pref="rightClick">
+                                <option value="1">打开smzdm网站</option>
+                                <option value="3">删除所有信息</option>
+                                <option value="4">无动作</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>-->
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">关于插件 v0.2</h3>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>smzdm的官方firefox的推送扩展实在太难用了，和chrome的插件比就是个坑货,所以这是非官方的强力版</h5>
+                    <p>所有功能均参照官方chrome版推送插件的功能，插件完全免费且开源。</p>
+                    <p>ps：<i>类似chrome的堆叠桌面提示需安装扩展<a href="https://addons.mozilla.org/en-US/firefox/addon/tab-notifier">tab-notifier</a></i></p>
+                    <ul class="list-unstyled">
+                        <li> 项目地址：<a href="https://github.com/chenxiaolei/smzdmplus">https://github.com/chenxiaolei/smzdmplus</a></li>
+                        <li> 邮件地址：<a href="mailto:poison7@yeah.net">poison7@yeah.net</a></li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/x-handlebars-template" id="cats-template">
+    {{#cats}}
+    <div class="col-md-2">
+        <input class="cats-filter" type="checkbox" id="cat-{{id}}" name="cats-filter"  pref="catsFilters"  value="{{id}}" checked> {{title}}
+    </div>
+    {{/cats}}
+</script>
+</body>
+</html>

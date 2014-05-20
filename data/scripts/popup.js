@@ -3,10 +3,18 @@
 var popupContent = $("#popup-content");
 
 popupContent.on("click", "#register,#baoliao,#website,#viewMoreItems,.item-actions a,#popup-body .item-image a,#popup-body .item-title a", openTab);
-popupContent.on("click", "#deleteAllItem", function(){
+popupContent.on("click", "#deleteAllItem", function(event){
     deleteItems();
     self.port.emit("deleteAllItem");
+    event && event.preventDefault && event.preventDefault();
+    return false;
 });
+popupContent.on("click", "#setting-btn", function(event){
+    self.port.emit("openSettingTab");
+    event && event.preventDefault && event.preventDefault();
+    return false;
+});
+
 
 
 /**

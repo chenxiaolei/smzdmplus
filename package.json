@@ -2,9 +2,18 @@
     "name": "smzdmplus",
     "title": "smzdmplus",
     "id": "jid1-OTjpmQ87wGejLQ",
-    "description": "a basic add-on",
-    "author": "",
+    "author": "chenxiaolei",
+    "homepage": "https://github.com/chenxiaolei/smzdmplus",
+    "description": "非官方smzdm.com强力推送插件",
     "license": "MPL 2.0",
     "version": "0.1",
-    "dependencies": ["toolbarwidget", "addon-sdk"]
+    "dependencies": ["toolbarwidget", "addon-sdk"],
+    "preferences": [
+        {
+            "name": "setting",
+            "title": "",
+            "label": "配置选项",
+            "type": "control"
+        }
+    ]
 }
