@@ -24,7 +24,7 @@ settingContent.on("click", "#addTestData", function (event) {
 
 
 
-settingContent.on("change", 'input[name="allowNotify"],input[name="allowPlaySound"],#maxAppendedItemsSize,#allowItemArea,#keywordInclud', function () {
+settingContent.on("change", '#allowNotificationsPlaySound,#showDesktopNotifications,#maxAppendedItemsSize,#allowItemArea,#keywordInclud', function () {
     var val= $.isNumeric($(this).val())? parseInt($(this).val()):$(this).val();
     var prefData={
         name:$(this).attr("pref"),
@@ -79,16 +79,22 @@ self.port.on("getCats", function (cats1,cats2) {
 });
 
 self.port.on("returnSetting", function(settingOptions){
+
     $("#maxAppendedItemsSize").val(settingOptions["maxAppendedItemsSize"]);
     $("#allowItemArea").val(settingOptions["allowItemArea"]);
     $("#keywordInclud").val(settingOptions["keywordInclud"]);
+
+    console.info('settingOptions["showDesktopNotifications"]=========',settingOptions["showDesktopNotifications"]);
+    console.info('settingOptions["allowNotificationsPlaySound"]=========',settingOptions["allowNotificationsPlaySound"]);
+    $("#showDesktopNotifications").val(settingOptions["showDesktopNotifications"]);
+    $("#allowNotificationsPlaySound").val(settingOptions["allowNotificationsPlaySound"]);
 
     /*$("#leftClick").val(settingOptions["leftClick"]);
     $("#middleClick").val(settingOptions["middleClick"]);
     $("#rightClick").val(settingOptions["rightClick"]);*/
 
-    $('input[name="allowNotify"][value="'+(settingOptions["showDesktopNotifications"]&& settingOptions["showDesktopNotifications"]==1?1:0)+'"]').attr("checked",true);
-    $('input[name="allowPlaySound"][value="'+(settingOptions["allowNotificationsPlaySound"] && settingOptions["allowNotificationsPlaySound"]==1?1:0)+'"]').attr("checked",true);
+    //$('input[name="allowNotify"][value="'+(settingOptions["showDesktopNotifications"]&& settingOptions["showDesktopNotifications"]==1?1:0)+'"]').attr("checked",true);
+    //$('input[name="allowPlaySound"][value="'+(settingOptions["allowNotificationsPlaySound"] && settingOptions["allowNotificationsPlaySound"]==1?1:0)+'"]').attr("checked",true);
 
     var cats = settingOptions["catsFilters"] ? settingOptions["catsFilters"]: [];
     if(cats.length==0){

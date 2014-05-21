@@ -24,12 +24,10 @@
                         </a>
                         </label>
                         <div>
-                            <label class="radio-inline">
-                                <input type="radio" name="allowNotify" id="allowNotifyYes" value="1" pref="showDesktopNotifications">开启
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="allowNotify" id="allowNotifyNo" value="0" pref="showDesktopNotifications">关闭
-                            </label>
+                            <select id="showDesktopNotifications" name="showDesktopNotifications" class="form-control" pref="showDesktopNotifications">
+                                <option value="1">开启</option>
+                                <option value="0">关闭</option>
+                            </select>
                         </div>
                     </div>
 
@@ -60,12 +58,10 @@
                             </a>
                         </label>
                         <div>
-                            <label class="radio-inline">
-                                <input type="radio" name="allowPlaySound" id="allowPlaySoundYes" value="1" pref="allowNotificationsPlaySound">开启
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="allowPlaySound" id="allowPlaySoundNo" value="0" pref="allowNotificationsPlaySound">关闭
-                            </label>
+                            <select id="allowNotificationsPlaySound" name="allowNotificationsPlaySound" class="form-control" pref="allowNotificationsPlaySound">
+                                <option value="1">开启</option>
+                                <option value="0">关闭</option>
+                            </select>
                         </div>
                     </div>
 
