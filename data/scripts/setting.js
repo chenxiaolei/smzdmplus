@@ -16,7 +16,15 @@ settingContent.on("click", "#testNotifyBtn", function (event) {
 });
 
 
-settingContent.on("change", 'input[name="allowNotify"],input[name="allowPlaySound"],#maxAppendedItemsSize,#allowItemArea,#keywordInclud,#leftClick,#middleClick,#rightClick', function () {
+settingContent.on("click", "#addTestData", function (event) {
+    self.port.emit("addTestData", null);
+    event && event.preventDefault && event.preventDefault();
+    return false;
+});
+
+
+
+settingContent.on("change", 'input[name="allowNotify"],input[name="allowPlaySound"],#maxAppendedItemsSize,#allowItemArea,#keywordInclud', function () {
     var val= $.isNumeric($(this).val())? parseInt($(this).val()):$(this).val();
     var prefData={
         name:$(this).attr("pref"),
@@ -30,7 +38,7 @@ settingContent.on("change", '#keywordInclud', function () {
     var val=$(this).val().toString().trim();
     var prefData={
         name:$(this).attr("pref"),
-        value: val
+        value: val.trim()
     }
     console.info('setting change--------------------------------------------------------------------------------------------', $(this).attr("pref"), "=", val);
     self.port.emit("storePref", prefData);
@@ -38,7 +46,7 @@ settingContent.on("change", '#keywordInclud', function () {
 
 settingContent.on("change", 'input[name="cats-filter"]', function () {
     var catIdArr=[];
-    $('input[name="cats-filter"]:not(:checked)',settingContent).each(function () {
+    $('input[name="cats-filter"]:checked',settingContent).each(function () {
         var val= $.isNumeric($(this).val())? parseInt($(this).val()):$(this).val();
         catIdArr.push(val);
     })
@@ -67,9 +75,7 @@ self.port.on("getCats", function (cats1,cats2) {
             $("#itemCat-body").append(row);
         }
     }
-
     self.port.emit("getSetting", null);
-
 });
 
 self.port.on("returnSetting", function(settingOptions){
@@ -85,11 +91,19 @@ self.port.on("returnSetting", function(settingOptions){
     $('input[name="allowPlaySound"][value="'+(settingOptions["allowNotificationsPlaySound"]?1:0)+'"]').attr("checked",true);
 
     var cats = settingOptions["catsFilters"] ? settingOptions["catsFilters"]: [];
-    for(var i=0;i<cats.length;i++){
-        $('#cat-'+cats[i]).attr("checked",false);
+    if(cats.length==0){
+       $('input[name="cats-filter"]').attr("checked",true);
+    }else{
+        for(var i=0;i<cats.length;i++){
+            $('#cat-'+cats[i]).attr("checked",true);
+        }
     }
 
+
 });
+
+
+
 
 
 
