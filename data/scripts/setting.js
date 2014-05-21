@@ -87,8 +87,8 @@ self.port.on("returnSetting", function(settingOptions){
     $("#middleClick").val(settingOptions["middleClick"]);
     $("#rightClick").val(settingOptions["rightClick"]);*/
 
-    $('input[name="allowNotify"][value="'+(settingOptions["showDesktopNotifications"]?1:0)+'"]').attr("checked",true);
-    $('input[name="allowPlaySound"][value="'+(settingOptions["allowNotificationsPlaySound"]?1:0)+'"]').attr("checked",true);
+    $('input[name="allowNotify"][value="'+(settingOptions["showDesktopNotifications"]&& settingOptions["showDesktopNotifications"]==1?1:0)+'"]').attr("checked",true);
+    $('input[name="allowPlaySound"][value="'+(settingOptions["allowNotificationsPlaySound"] && settingOptions["allowNotificationsPlaySound"]==1?1:0)+'"]').attr("checked",true);
 
     var cats = settingOptions["catsFilters"] ? settingOptions["catsFilters"]: [];
     if(cats.length==0){
