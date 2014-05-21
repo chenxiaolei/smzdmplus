@@ -201,4 +201,17 @@ body {
     margin-right:20px;
 }
 
+#setting-btn{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: url(../images/setting.png) 0 0 no-repeat;
+    display: block;
+}
+
+#setting-btn:hover{
+    background: url(../images/settingBlue.png) 0 0 no-repeat;
+}
+
+
 
