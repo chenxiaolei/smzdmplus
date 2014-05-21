@@ -26,6 +26,9 @@ ps:
 ### 展示窗口
 ![Image text1](http://raw.github.com/chenxiaolei/smzdmplus/master/snapshot/1.png)
 
+### 配置选项
+![Image text1](http://raw.github.com/chenxiaolei/smzdmplus/master/snapshot/3.png)
+
 ### tab notifier 推送提示
 ![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/2.png)
 
