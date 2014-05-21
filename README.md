@@ -1,4 +1,4 @@
-smzdmplus无聊自制版
+smzdmplus非官方强力版
 =========
 
 smzdm.com上firefox的推送扩展，官方版实在太难用了，一年都没更新过，和chrome的插件比简直...<br/>
