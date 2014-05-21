@@ -6,7 +6,9 @@
     "homepage": "https://github.com/chenxiaolei/smzdmplus",
     "description": "非官方smzdm.com强力推送插件",
     "license": "MPL 2.0",
-    "version": "0.1",
+    "version": "0.2",
+    "icon": "data/images/icon48.png",
+    "icon64": "data/images/icon64.png",
     "dependencies": ["toolbarwidget", "addon-sdk"],
     "preferences": [
         {
