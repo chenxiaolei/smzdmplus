@@ -6,18 +6,17 @@ smzdm.com上firefox的推送扩展，官方版实在太难用了，一年都没�
 
 类似chrome的推送提示,需要先安装[tab-notifier](https://addons.mozilla.org/en-US/firefox/addon/tab-notifier/)扩展<br/>
 不然就使用ff自带的<br/>
-ps: 
 1，tab-notifer通知窗口的设置在tab-notifer扩展选项中设置(如:自动关闭事件,大小,位置等), <br/>
 2，ff原生接口目前通知窗口不能堆叠通知窗口,一次只能显示一个，且3秒自动消失，无法设置
 
-扩展在此[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi) 
-
-20140521 更新
-可以进入配置界面了,推送过滤可用
-20140521 v2更新
+最新扩展在此[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi) 
+>>>
+- 20140521v2
 修正无法保存配置的bug
+- 20140521
+可以进入配置界面了,推送过滤可用
 
-- 最低要求是ff21, 自己是win7的ff29,理论上mac,linux都可以,没测试
+最低要求是ff21, 自己是win7的ff29,理论上mac,linux都可以,没测试
 
 有问题邮poison7@yeah.net<br/>
 不保证回复
