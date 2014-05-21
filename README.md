@@ -12,8 +12,10 @@ ps:
 
 扩展在此[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi) 
 
-20140521更新
+20140521 更新
 可以进入配置界面了,推送过滤可用
+20140521 v2更新
+修正无法保存配置的bug
 
 - 最低要求是ff21, 自己是win7的ff29,理论上mac,linux都可以,没测试
 
