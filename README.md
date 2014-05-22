@@ -6,10 +6,10 @@ smzdm.com上firefox的推送扩展，官方版实在太难用了，一年都没�
 
 类似chrome的推送提示,需要先安装[tab-notifier](https://addons.mozilla.org/en-US/firefox/addon/tab-notifier/)扩展, 如没有装也没关系，扩展将使用ff原生接口自带的通知窗口提示。<br/>
 1，tab-notifer通知窗口的设置在tab-notifer扩展选项中设置，如：自动关闭时间，大小（这个感觉差异不大），位置等, <br/>
-2, tab-notifer扩展自身功能就是根据页面标题变化来弹出通知窗口，如果不需要可以屏蔽掉(网站通知行为'拒绝',标题监视行为'忽略'),此选项不影响smzdmplus的通知弹出
+2, tab-notifer扩展自身功能就是根据页面标题变化来弹出通知窗口，如果不需要可以屏蔽掉(网站通知行为'拒绝',标题监视行为'忽略'),此选项不影响smzdmplus的通知弹出 <br/>
 3, 如果实在觉得tab-notifer的弹出窗口大小，可以自己修改下tab-notifer的css（下载tab-notifer(tab-notifer.xpi)，用winrar打开，修改/content/alert/alert.css,然后安装修改后的xpi即可）,这里提供一份自用的css
-[alert.css](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/alert.css) 
-4，ff原生接口目前通知窗口不能堆叠通知窗口,一次只能显示一个，且3秒自动消失，无法设置
+[alert.css](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/alert.css)  <br/>
+4，ff原生接口目前通知窗口不能堆叠通知窗口,一次只能显示一个，且3秒自动消失，无法设置 <br/>
 
 最新扩展在此[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi) 
 >>>
