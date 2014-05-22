@@ -11,9 +11,11 @@ smzdm.com上firefox的推送扩展，官方版实在太难用了，一年都没�
 
 最新扩展在此[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi) 
 >>>
-- 20140521v2
+- 20140522 v0.2.2
+现在显示弹出面板时,内容部分滚动条自动回到顶部
+- 20140521 v0.2.1
 修正无法保存配置的bug
-- 20140521
+- 20140521 v0.2
 可以进入配置界面了,推送过滤可用
 
 最低要求是ff21, 自己是win7的ff29,理论上mac,linux都可以,没测试

@@ -50,6 +50,7 @@ function renderItems(data) {
     }
 
     self.port.emit("resetItemsReaded");
+    backToTop();
 }
 
 function clearNoreadNewImage(){
@@ -69,3 +70,12 @@ self.port.on("itemsUpdated", function (itemsData) {
 self.port.on("itemsDeleted", function (items) {
     deleteItems(items);
 });
+
+
+self.port.on("backToTop", function (items) {
+    backToTop();
+});
+
+function backToTop(){
+    $("#popup-body").scrollTop(0);
+}
