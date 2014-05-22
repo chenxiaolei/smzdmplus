@@ -1,0 +1,98 @@
+window[tabNotifier] {
+    border-radius: 5px;
+    font-size:small;
+    background-color: transparent;
+}
+#alertNotification[clickable="true"][tabNotifier] {
+    cursor: inherit;
+}
+#tabnotifier_alertBox {
+    border: 2px solid #999999;
+    background-color: #ffffff;
+}
+#tabnotifier_header{
+    background-color:#eeeeee;
+    color:#666666;
+    -moz-box-align:center;
+    font-size:12px;
+}
+window[tabNotifier][round],
+window[round] #tabnotifier_alertBox,
+window[round] #tabnotifier_header {
+    border-radius: 5px;
+}
+#tabnotifier_hostname {
+    width:12em;
+    margin-right:9px;
+    text-align:right;
+}
+#tabnotifier_close , #tabnotifier_ignore{
+    padding:0;
+    margin-right:3px;
+    width:16px;
+    border: 0;
+    height:16px;
+}
+#tabnotifier_close {
+    background:url('close.png') 0 0 no-repeat;
+}
+#tabnotifier_close:hover{
+    background:url('closeHover.png') 0 0 no-repeat;
+}
+#tabnotifier_ignore {
+    background:url('ignore.png') 0 0 no-repeat;
+}
+#tabnotifier_ignore:hover{
+    background:url('ignoreHover.png') 0 0 no-repeat;
+}
+#tabnotifier_clientArea {
+    border-top:1px solid #999999;
+    padding:5px;
+}
+window[size='small'] #tabnotifier_imageBox {
+    max-width:42px;
+    max-height:42px;
+}
+window[size='normal'] #tabnotifier_imageBox {
+    max-width:65px;
+    max-height:130px;
+}
+window[size='small'] #tabnotifier_icon, window[tabNotifier][size='small'] #alertImage {
+    max-width:42px;
+    max-height:42px;
+}
+window[size='normal'] #tabnotifier_icon, window[tabNotifier][size='normal'] #alertImage {
+    max-width:65px;
+    max-height:160px;
+}
+#tabnotifier_textBox {
+    margin-left:8px;
+    padding:0;
+    line-height:1.25;
+    height:3.75em;
+    overflow:hidden;
+    cursor: default;
+    font-weight:bold;
+}
+window[size='small'] #tabnotifier_textBox {
+    height:3.75em;
+}
+window[size='normal'] #tabnotifier_textBox {
+    height:150px;
+}
+
+
+window[size='small'] #tabnotifier_title {
+    width:20em;
+}
+window[size='normal'] #tabnotifier_title {
+    width:260px;
+}
+window[size='small'] #tabnotifier_text {
+    width:20em;
+    font-weight:normal;
+}
+window[size='normal'] #tabnotifier_text {
+    width:260px;
+    font-weight:normal;
+}
