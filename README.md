@@ -13,6 +13,8 @@ smzdm.com上firefox的推送扩展，官方版实在太难用了，一年都没�
 
 最新扩展在此[smzdmplus.xpi](http://github.com/chenxiaolei/smzdmplus/raw/master/smzdmplus.xpi) 
 >>>
+- 20140610 v0.2.3
+smzmd改版之前api不能用了,替换为新的
 - 20140522 v0.2.2
 现在显示弹出面板时,内容部分滚动条自动回到顶部
 - 20140521 v0.2.1
