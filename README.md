@@ -37,12 +37,12 @@ smzmd改版之前api不能用了,替换为新的
 ![Image text1](http://raw.github.com/chenxiaolei/smzdmplus/master/snapshot/3.png)
 
 ### tab notifier 推送提示
-![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/2.png)
+![Image text1](http://raw.github.com/chenxiaolei/smzdmplus/master/snapshot/2.png)
 
 ### ff自带推送提示
-![Image text1](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/4.png)<br/>
+![Image text1](http://raw.github.com/chenxiaolei/smzdmplus/master/snapshot/4.png)<br/>
 一次收到多个推送,合并只显示数量<br/>
-![Image text1](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/5.png)
+![Image text1](http://raw.github.com/chenxiaolei/smzdmplus/master/snapshot/5.png)
 
-![Image text1](http://raw.github.com/chenxiaolei/smzdmplus/master/snapshot/1.png)
+
 额
