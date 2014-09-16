@@ -40,7 +40,7 @@ smzmd改版之前api不能用了,替换为新的
 ![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/2.png)
 
 ### ff自带推送提示
-![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/4.png)<br/>
+![Image text3](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/4.png)<br/>
 一次收到多个推送,合并只显示数量<br/>
-![Image text2](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/5.png)
+![Image text4](http://github.com/chenxiaolei/smzdmplus/raw/master/snapshot/5.png)
 额
